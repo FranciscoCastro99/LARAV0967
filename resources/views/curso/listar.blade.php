@@ -10,6 +10,8 @@
 
     @foreach ($cursos as $curso)
     <tr>
+
+
         <br>
         <td>{{$curso->name}}</td>
         <td>{{$curso->descripcion}}</td>

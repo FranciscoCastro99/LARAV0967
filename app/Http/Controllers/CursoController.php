@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Curso;
+use App\Models\Profile;
 use Illuminate\Http\Request;
 
 class CursoController extends Controller
@@ -12,6 +13,11 @@ class CursoController extends Controller
       $cursos = Curso::orderBy('id', 'desc')->get();
        return view('curso.listar', compact('cursos'));
 
+    //$temp=User::find(1);
+    // return $temp->profile;
+
+    // $temp=Profile::find(1);
+    // return $temp->user;
   }
 
     public function create(){
@@ -65,6 +71,7 @@ class CursoController extends Controller
     return redirect()->route('curso.index');
 
   }
+
 
 
 }
