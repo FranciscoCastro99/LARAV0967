@@ -30,3 +30,9 @@ Route::get('curso/{curso}/editar',[CursoController::class,'edit'])->name('curso.
 // Route::post('/calcularprimo',[ProductController::class,'productoStore'])->name('product.store');
 //Route::get('/curso/{dato1}/{dato2}',[CursoController::class,'hola'])->name('curso.show');
 //Route::get('curso/{curso}',[CursoController::class,'show'])->name('curso.show');
+
+
+////////////////////         PROFILE          ///////////////////////
+
+Route::get('profile/create',[ProfileController::class,'create']);
+Route::post('profile/store', [ProfileController::class,'store'])->name('profile.store');
